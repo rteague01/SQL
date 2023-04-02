@@ -1,0 +1,26 @@
+Create a clothing store database
+
+CREATE TABLE mystore_clothing (item TEXT, quantity INTEGER, brands INTEGER, aisle INTEGER, price INTEGER);
+INSERT INTO mystore_clothing values ("Socks", 40, 6, 1, 6.99);
+INSERT INTO mystore_clothing values ("Underwear", 40, 6, 1, 6.99);
+INSERT INTO mystore_clothing values ("Tank tops", 35, 6, 2, 9.99);
+INSERT INTO mystore_clothing values ("T-Shirts", 50, 6, 2, 15.99);
+INSERT INTO mystore_clothing values ("Blouses", 25, 5, 3, 29.99);
+INSERT INTO mystore_clothing values ("Dresses", 45, 6, 3, 49.99);
+INSERT INTO mystore_clothing values ("Shorts", 45, 6, 4, 19.99);
+INSERT INTO mystore_clothing values ("Jeans", 60, 10, 1, 20.99);
+INSERT INTO mystore_clothing values ("Bras", 60, 5, 1, 19.99);
+INSERT INTO mystore_clothing values ("Sneakers", 30, 4, 5, 49.99);
+INSERT INTO mystore_clothing values ("Slip-ons", 20, 4, 5, 9.99);
+INSERT INTO mystore_clothing values ("Heels", 20, 4, 5, 19.99);
+INSERT INTO mystore_clothing values ("Belts", 20, 4, 6, 9.99);
+INSERT INTO mystore_clothing values ("Necklaces", 20, 4, 6, 9.99);
+INSERT INTO mystore_clothing values ("Bracelets", 20, 4, 6, 9.99);
+
+--Order by price
+SELECT * FROM mystore_clothing ORDER BY price;
+
+--See total number of items in store
+SELECT SUM (quantity) FROM mystore_clothing;
+
+
